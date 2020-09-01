@@ -6,9 +6,17 @@ namespace CSharpPractice
     {
         static void Main(string[] args)
         {
-            string firstName = "Ponick "; //first name
-            string lastName = "Khan"; //last Name 
-            string fullName = firstName + lastName;
+            // Type your first and press enter
+            Console.WriteLine("Enter your firstname:");
+
+            // Create a string variable and get user input from the keyboard and store it in the variable
+            string firstName = Console.ReadLine(); //first name
+            // Type your lastname and press enter
+            Console.WriteLine("Enter your lastname:");
+            // Create a string variable and get user input from the keyboard and store it in the variable
+            string lastName = Console.ReadLine(); //last Name
+            Console.WriteLine("Your Full Name:");
+            string fullName = firstName +" "+ lastName;
             Console.WriteLine(fullName);
 
         }
