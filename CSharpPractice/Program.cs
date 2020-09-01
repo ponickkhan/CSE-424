@@ -6,8 +6,11 @@ namespace CSharpPractice
     {
         static void Main(string[] args)
         {
-            string name = "Ponick";
-            Console.WriteLine("Hello " + name!);
+            string firstName = "Ponick "; //first name
+            string lastName = "Khan"; //last Name 
+            string fullName = firstName + lastName;
+            Console.WriteLine(fullName);
+
         }
     }
 }
