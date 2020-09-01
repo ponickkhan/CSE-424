@@ -6,7 +6,8 @@ namespace CSharpPractice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World Ponick!");
+            string name = "Ponick";
+            Console.WriteLine("Hello " + name!);
         }
     }
 }
