@@ -5,25 +5,6 @@ namespace CSharpPractice
     class Program
     {
 
-        static void ThePrinter(string firstName = "Ponick",string lastName = "Khan", int age=0)
-        {
-            
-
-            string fullName = firstName + " " + lastName;
-            Console.WriteLine("Your Full Name:");
-            Console.WriteLine(fullName);
-            Console.WriteLine("Your Age:");
-            TheAger(age);
-
-
-        }
-        
-        static void TheAger(int age)
-        {
-            
-            Console.WriteLine(age);
-            
-        }
         static void Main(string[] args)
         {
             // Type your first and press enter
@@ -37,8 +18,8 @@ namespace CSharpPractice
             string lastName = Console.ReadLine(); //last Name
             Console.WriteLine("Enter your Age:");
             int age = Convert.ToInt32(Console.ReadLine()); //last Name
-
-            ThePrinter(firstName, lastName, age);
+            Animal Instance = new Animal();
+            Instance.ThePrinter(firstName, lastName, age);
 
 
 
