@@ -4,6 +4,15 @@ namespace CSharpPractice
 {
     class Program
     {
+
+        static void ThePrinter(string firstName,string lastName)
+        {
+
+            string fullName = firstName + " " + lastName;
+            Console.WriteLine(fullName);
+
+
+        }
         static void Main(string[] args)
         {
             // Type your first and press enter
@@ -16,8 +25,10 @@ namespace CSharpPractice
             // Create a string variable and get user input from the keyboard and store it in the variable
             string lastName = Console.ReadLine(); //last Name
             Console.WriteLine("Your Full Name:");
-            string fullName = firstName +" "+ lastName;
-            Console.WriteLine(fullName);
+
+            ThePrinter(firstName, lastName);
+
+
 
         }
     }
