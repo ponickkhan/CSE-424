@@ -5,7 +5,7 @@ namespace CSharpPractice
     class Program
     {
 
-        static void ThePrinter(string firstName,string lastName)
+        static void ThePrinter(string firstName = "Ponick",string lastName = "Khan")
         {
 
             string fullName = firstName + " " + lastName;
@@ -27,6 +27,7 @@ namespace CSharpPractice
             Console.WriteLine("Your Full Name:");
 
             ThePrinter(firstName, lastName);
+            ThePrinter();
 
 
 
