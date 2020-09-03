@@ -18,8 +18,8 @@ namespace CSharpPractice
             string lastName = Console.ReadLine(); //last Name
             Console.WriteLine("Enter your Age:");
             int age = Convert.ToInt32(Console.ReadLine()); //last Name
-            Animal Instance = new Animal();
-            Instance.ThePrinter(firstName, lastName, age);
+            Animal Instance = new Animal(firstName);
+            Instance.ThePrinter(Instance.firstNam, lastName, age);
 
 
 

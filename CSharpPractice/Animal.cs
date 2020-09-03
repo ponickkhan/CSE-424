@@ -4,6 +4,15 @@ namespace CSharpPractice
 {
     public class Animal
     {
+        
+        public string firstNam;
+
+        internal Animal(String firstName)
+        {
+            firstNam=firstName;
+
+
+        }
         public void ThePrinter(string firstName = "Ponick",string lastName = "Khan", int age=0)
         {
             
