@@ -6,10 +6,12 @@ namespace CSharpPractice
     {
         
         public string firstNam;
+        public string Name  // property
+        { get; set; }
 
         internal Animal(String firstName)
         {
-            firstNam=firstName;
+            Name=firstName;
 
 
         }
