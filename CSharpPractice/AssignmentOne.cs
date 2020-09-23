@@ -14,18 +14,28 @@ namespace CSharpPractice
             Console.WriteLine("------------------------------------------------------");
 
             Console.Write("Enter The Number : ");
-            var n = Convert.ToInt32(Console.ReadLine());
-            
+            Int64 n = Convert.ToInt64(Console.ReadLine());
 
             var sum = 1;
 
                 for (var i=2; i*i<=n; i++)
                 {
+                    if (i>0)
                     if (n % i != 0) continue;
-                    if(i*i!=n)
-                        sum = sum + i + n/i;
-                    else
+                    if(i*i!=n){ 
+                        
+                       
+
+                        if (i>0)
+                        {
+                            sum = (int) (sum + i + n/i); 
+                            Console.WriteLine("Sum:{0} i:{1} n:{2}",sum,i,n);
+                        }
+                        
+                    
+                    } else
                         sum=sum+i;
+                        Console.WriteLine("Sum:{0} i:{1} n:{2}",sum,i,n);
                 }
 
                 if (sum == n && n != 1)
