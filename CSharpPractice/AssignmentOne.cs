@@ -19,8 +19,9 @@ namespace CSharpPractice
 {
  
     public static class AssignmentOne
-    {  
-        public static void Main()
+    {
+
+        public static void Perfect_Number()
         {
             Console.Write("\n\n");
             Console.WriteLine("Check whether a given number is perfect number or not:");
@@ -31,28 +32,35 @@ namespace CSharpPractice
 
             var sum = 1;
 
-                for (var i=2; i*i<=n; i++)
-                {
-                    if (i>0)
+            for (var i=2; i*i<=n; i++)
+            {
+                if (i>0)
                     if (n % i != 0) continue;
-                    if (i*i!=n)
-                    {
-                        sum = (int) (sum + i + n / i);
-                    } else
-                        sum=sum+i;
-                }
+                if (i*i!=n)
+                {
+                    sum = (int) (sum + i + n / i);
+                } else
+                    sum=sum+i;
+            }
 
-                if (sum == n && n != 1)
-                {
-                    Console.WriteLine($"{n} is a perfect number ! ");
-                }
-                else
-                {
-                    Console.WriteLine($"{n} is not a perfect number ! ");
-                }
+            if (sum == n && n != 1)
+            {
+                Console.WriteLine($"{n} is a perfect number ! ");
+            }
+            else
+            {
+                Console.WriteLine($"{n} is not a perfect number ! ");
+            }
   
                 
-        }  
+         
+        }
+
+        public static void Main()
+        {
+            Perfect_Number();
+        }
+
     }
 
 }
