@@ -35,29 +35,20 @@ namespace CSharpPractice
                 {
                     if (i>0)
                     if (n % i != 0) continue;
-                    if (i*i!=n){ 
-                        
-                       
-
-                        if (i>0)
-                        {
-                            sum = (int) (sum + i + n/i); 
-                            //Console.WriteLine("Sum:{0} i:{1} n:{2}",sum,i,n);
-                        }
-                        
-                    
+                    if (i*i!=n)
+                    {
+                        sum = (int) (sum + i + n / i);
                     } else
                         sum=sum+i;
-                        //Console.WriteLine("Sum:{0} i:{1} n:{2}",sum,i,n);
                 }
 
                 if (sum == n && n != 1)
                 {
-                    Console.WriteLine("{0} is a perfect number ! ", n);
+                    Console.WriteLine($"{n} is a perfect number ! ");
                 }
                 else
                 {
-                    Console.WriteLine("{0} is not a perfect number ! ", n);
+                    Console.WriteLine($"{n} is not a perfect number ! ");
                 }
   
                 
