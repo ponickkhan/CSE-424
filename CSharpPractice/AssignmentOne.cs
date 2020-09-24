@@ -2,6 +2,7 @@
 /*that number is equal to that number. For example 6 is perfect number since divisor of 6 are 1, 2 and 3.*/
 /*Sum of its divisor is 1 + 2+ 3 = 6*/
 /*
+Some Perfect Number:
 6 	
 28 	
 496 	
@@ -34,20 +35,20 @@ namespace CSharpPractice
                 {
                     if (i>0)
                     if (n % i != 0) continue;
-                    if(i*i!=n){ 
+                    if (i*i!=n){ 
                         
                        
 
                         if (i>0)
                         {
                             sum = (int) (sum + i + n/i); 
-                            Console.WriteLine("Sum:{0} i:{1} n:{2}",sum,i,n);
+                            //Console.WriteLine("Sum:{0} i:{1} n:{2}",sum,i,n);
                         }
                         
                     
                     } else
                         sum=sum+i;
-                        Console.WriteLine("Sum:{0} i:{1} n:{2}",sum,i,n);
+                        //Console.WriteLine("Sum:{0} i:{1} n:{2}",sum,i,n);
                 }
 
                 if (sum == n && n != 1)
