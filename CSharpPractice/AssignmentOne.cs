@@ -20,7 +20,14 @@ namespace CSharpPractice
  
     public static class AssignmentOne
     {
-
+         // Recursive function to return
+        // gcd of a and b
+        static int gcd(int a, int b)
+        {      
+            if (b == 0)
+                return a;
+            return gcd(b, a % b); 
+        }
         public static void Perfect_Number()
         {
             Console.Write("\n\n");
@@ -58,7 +65,11 @@ namespace CSharpPractice
 
         public static void Main()
         {
-            Perfect_Number();
+            //Perfect_Number();
+            int a = 98, b = 56;
+            Console.WriteLine("GCD of "
+                              + a +" and " + b + " is "
+                              + gcd(a, b));
         }
 
     }
