@@ -1,27 +1,10 @@
-/*Perfect number is a positive number which sum of all positive divisors excluding*/ 
-/*that number is equal to that number. For example 6 is perfect number since divisor of 6 are 1, 2 and 3.*/
-/*Sum of its divisor is 1 + 2+ 3 = 6*/
-/*
-Some Perfect Number:
-6 	
-28 	
-496 	
-33550336 	
-8589869056 	
-137438691328 
-2305843008139952128 
-*/
-
-
-
 using System; 
 namespace CSharpPractice
 {
  
     public static class AssignmentOne
     {
-         // Recursive function to return
-        // gcd of a and b
+
         static int gcd(int a, int b)
         {      
             if (b == 0)
