@@ -1,4 +1,6 @@
-using System; 
+using System;
+using System.Net.NetworkInformation;
+
 namespace CSharpPractice
 {
  
@@ -68,10 +70,18 @@ namespace CSharpPractice
 
         public static void Main()
         {
+            int a = 100;
+            Change(a);
             //Perfect_Number();
-            armstrong_number();
-            int a = 98, b = 56;
-           // Console.WriteLine("GCD of " + a +" and " + b + " is " + gcd(a, b));
+            //armstrong_number();
+            // int a = 98, b = 56;
+            // Console.WriteLine("GCD of " + a +" and " + b + " is " + gcd(a, b));
+            Console.WriteLine(a);
+        }
+
+        public static void Change(int a)
+        {
+            a = 300;
         }
 
     }
