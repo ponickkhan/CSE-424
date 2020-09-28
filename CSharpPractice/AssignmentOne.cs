@@ -1,5 +1,4 @@
 using System;
-using System.Net.NetworkInformation;
 
 namespace CSharpPractice
 {
@@ -70,20 +69,31 @@ namespace CSharpPractice
 
         public static void Main()
         {
-            int a = 100;
-            Change(a);
             //Perfect_Number();
             //armstrong_number();
             // int a = 98, b = 56;
             // Console.WriteLine("GCD of " + a +" and " + b + " is " + gcd(a, b));
-            Console.WriteLine(a);
+            primeNumber();
         }
 
-        public static void Change(int a)
+        public static void primeNumber()
         {
-            a = 300;
+            int n, i, m=0, flag=0;    
+            Console.Write("Enter the Number to check Prime: ");    
+            n = int.Parse(Console.ReadLine());  
+            m=n/2;    
+            for(i = 2; i <= m; i++)    
+            {    
+                if(n % i == 0)    
+                {    
+                    Console.Write("Number is not Prime.");    
+                    flag=1;    
+                    break;    
+                }    
+            }    
+            if (flag==0)    
+                Console.Write("Number is Prime.");       
         }
-
     }
 
 }
