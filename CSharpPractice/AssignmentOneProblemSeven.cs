@@ -1,7 +1,7 @@
 using System;  
 public class Exercise35 
 {  
-    public static void Main()
+    public static void Mainx()
     {
         int prv=0,pre=1,trm,i,n;
    

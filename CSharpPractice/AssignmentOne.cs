@@ -67,16 +67,17 @@ namespace CSharpPractice
             Console.Write(sum == temp ? "{0} is an Armstrong number.\n" : "{0} is not an Armstrong number.\n", temp);
         }
 
-        public static void Mainx()
+        public static void Main()
         {
             //Perfect_Number();
             //armstrong_number();
             // int a = 98, b = 56;
             // Console.WriteLine("GCD of " + a +" and " + b + " is " + gcd(a, b));
-            primeNumber();
+           // PrimeNumber();
+            FibonacciNth();
         }
 
-        public static void primeNumber()
+        public static void PrimeNumber()
         {
             int n, i, m=0, flag=0;    
             Console.Write("Enter the Number to check Prime: ");    
@@ -94,6 +95,30 @@ namespace CSharpPractice
             if (flag==0)    
                 Console.Write("Number is Prime.");       
         }
+
+
+        public static void FibonacciNth()
+        {
+            int prv = 0, pre = 1, trm, i, n;
+
+            Console.Write("\n\n");
+            Console.Write("Display the first n terms of fibonacci series:\n");
+            Console.Write("------------------------------------------------");
+            Console.Write("\n\n");
+
+            Console.Write("Input number of terms to be display : ");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Here is the fibonacci series upto  to {0} terms : \n", n);
+            Console.Write("{0}    {1}", prv, pre);
+
+            for (i = 3; i <= n; i++)
+            {
+                trm = prv + pre;
+                Console.Write("  {0}  ", trm);
+                prv = pre;
+                pre = trm;
+            }
+            Co
     }
 
 }
