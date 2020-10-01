@@ -85,9 +85,10 @@ namespace CSharpPractice
             // Console.WriteLine("GCD of " + a +" and " + b + " is " + gcd(a, b));
             // PrimeNumber();
            // FibonacciNth();
-           int a = 15, b = 20; 
-           Console.WriteLine("LCM of " + a + 
-                             " and " + b + " is " + Lcm(a, b)); 
+           //int a = 15, b = 20; 
+           //Console.WriteLine("LCM of " + a + 
+                           //  " and " + b + " is " + Lcm(a, b));
+          ReverseNumber();
         }
 
         public static void PrimeNumber()
@@ -109,7 +110,19 @@ namespace CSharpPractice
             if (flag == 0)
                 Console.Write("Number is Prime.");
         }
-
+        public static void ReverseNumber()  
+        {  
+            int  n, reverse=0, rem;           
+            Console.Write("Enter a number: ");      
+            n= int.Parse(Console.ReadLine());     
+            while(n!=0)      
+            {      
+                rem=n%10;        
+                reverse=reverse*10+rem;      
+                n/=10;      
+            }      
+            Console.Write("Reversed Number: "+reverse);       
+        }  
 
         public static void FibonacciNth()
         {
