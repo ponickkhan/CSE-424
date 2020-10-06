@@ -5,7 +5,7 @@ namespace CSharpPractice
 {
     public static class AssignmentTwo
     {
-        public static void Main()
+        public static void Mainx()
         {
             string path = Path.GetTempFileName();
             FileInfo oFileInfo = new FileInfo(path);

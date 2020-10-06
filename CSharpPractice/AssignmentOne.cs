@@ -78,10 +78,10 @@ namespace CSharpPractice
             Console.Write(sum == temp ? "{0} is an Armstrong number.\n" : "{0} is not an Armstrong number.\n", temp);
         }
 
-        public static void Mainx()
+        public static void Main()
         {
             //Perfect_Number();
-            //armstrong_number();
+            armstrong_number();
             // Console.WriteLine("GCD of " + a +" and " + b + " is " + gcd(a, b));
             // PrimeNumber();
            // FibonacciNth();
@@ -89,7 +89,7 @@ namespace CSharpPractice
            //Console.WriteLine("LCM of " + a + 
                            //  " and " + b + " is " + Lcm(a, b));
           //ReverseNumber();
-          Factorial_N();
+       //   Factorial_N();
         }
         
         static void Factorial_N()
