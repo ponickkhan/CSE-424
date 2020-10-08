@@ -78,7 +78,7 @@ namespace CSharpPractice
             Console.Write(sum == temp ? "{0} is an Armstrong number.\n" : "{0} is not an Armstrong number.\n", temp);
         }
 
-        public static void Main()
+        public static void Mainx()
         {
             //Perfect_Number();
             armstrong_number();
