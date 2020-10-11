@@ -81,14 +81,14 @@ namespace CSharpPractice
         public static void Main()
         {
             //Perfect_Number();
-            armstrong_number();
+            //armstrong_number();
             // Console.WriteLine("GCD of " + a +" and " + b + " is " + gcd(a, b));
             // PrimeNumber();
            // FibonacciNth();
            //int a = 15, b = 20; 
            //Console.WriteLine("LCM of " + a + 
                            //  " and " + b + " is " + Lcm(a, b));
-          //ReverseNumber();
+          ReverseNumber();
        //   Factorial_N();
         }
         
