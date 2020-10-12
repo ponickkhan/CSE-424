@@ -88,7 +88,7 @@ namespace CSharpPractice
            //int a = 15, b = 20; 
            //Console.WriteLine("LCM of " + a + 
                            //  " and " + b + " is " + Lcm(a, b));
-          ReverseNumber();
+        //  ReverseNumber();
        //   Factorial_N();
         }
         
