@@ -80,7 +80,7 @@ namespace CSharpPractice
 
         public static void Main()
         {
-            //Perfect_Number();
+            Perfect_Number();
             //armstrong_number();
             // Console.WriteLine("GCD of " + a +" and " + b + " is " + gcd(a, b));
             // PrimeNumber();
