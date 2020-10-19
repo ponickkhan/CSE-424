@@ -41,7 +41,7 @@ namespace CSharpPractice
 
         }
 
-        public static void Main()
+        public static void Mainx()
         {
             Perfect_Number();
 
