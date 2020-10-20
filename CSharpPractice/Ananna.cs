@@ -4,7 +4,7 @@ namespace CSharpPractice
 {
     public class Ananna
     {
-        public static void Main()
+        public static void Mainxx()
         {
             int  n, reverse=0, rem;           
             Console.Write("Enter a number: ");      
