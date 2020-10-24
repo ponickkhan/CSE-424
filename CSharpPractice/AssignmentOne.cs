@@ -29,6 +29,7 @@ namespace CSharpPractice
 
             for (var i = 2; i * i <= n; i++)
             {
+                Console.WriteLine($"{n} is checking ! ");
                 if (i > 0)
                     if (n % i != 0)
                         continue;
